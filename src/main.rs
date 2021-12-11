@@ -1,11 +1,11 @@
 mod logging;
 
 // extern crate pretty_env_logger;
-#[macro_use] extern crate log;
+#[macro_use]
+extern crate log;
 
 fn main() {
-    // pretty_env_logger::init();
-    pretty_env_logger::init_timed();
+    log_init!();
 
     trace!("tracing...");
     info!("such information");
